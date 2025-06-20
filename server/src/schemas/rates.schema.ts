@@ -1,9 +1,16 @@
-import { Schema } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { HydratedDocument } from 'mongoose';
 
-const RateSchema = new Schema({
-    userName: { type: String, required: true },
-    description: { type: String, required: true },
-    stars: { type: Number, required: true, min: 1, max: 5 }
-});
+@Schema()
+export class Rate {
+  @Prop({ required: true })
+  userName: string;
 
-export default RateSchema;
+  @Prop({ required: true })
+  description: string;
+
+  @Prop({ required: true, min: 1, max: 5 })
+  stars: number;
+}
+
+export const RateSchema = SchemaFactory.createForClass(Rate);

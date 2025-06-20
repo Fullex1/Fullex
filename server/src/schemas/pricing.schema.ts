@@ -1,18 +1,17 @@
-import { model, Schema } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { HydratedDocument } from 'mongoose';
 
-const PricingSchema = new Schema({
-    title: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
-    price: {
-        type: Number,
-        required: true
-    }
-});
-export const pricing = model('pricing', PricingSchema);
+
+@Schema()
+export class Pricing {
+  @Prop()
+  name: string;
+
+  @Prop()
+  price: number;
+
+  @Prop()
+  features: string[];
+}
+
+export const PricingSchema = SchemaFactory.createForClass(Pricing);

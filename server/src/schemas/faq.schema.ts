@@ -1,8 +1,13 @@
-import { Schema, model, Document } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { HydratedDocument } from 'mongoose';
 
-const FaqSchema = new Schema({
-    question: { type: String, required: true, trim: true },
-    answer: { type: String, required: true, trim: true },
-});
+@Schema()
+export class Faq {
+  @Prop()
+  question: string;
 
-export const Faq = model('Faq', FaqSchema);
+  @Prop()
+  answer: string;
+}
+
+export const FaqSchema = SchemaFactory.createForClass(Faq);

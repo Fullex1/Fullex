@@ -1,9 +1,16 @@
-import { Schema } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { HydratedDocument } from 'mongoose';
 
-const PortfolioSchema = new Schema({
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-    images: [{ type: String, required: true }]
-});
+@Schema()
+export class Portfolio {
+  @Prop()
+  title: string;
 
-export default PortfolioSchema;
+  @Prop()
+  description: string;
+
+  @Prop()
+  images: string[];
+}
+
+export const PortfolioSchema = SchemaFactory.createForClass(Portfolio);
