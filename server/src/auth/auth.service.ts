@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { User, UserSchema } from 'src/schemas/users.schema';
+import { User, UserSchema } from '../schemas/users.schema';
 import { userDto } from './dto/user.dto';
 import * as argon2 from "argon2";
 import { JwtService } from '@nestjs/jwt';
@@ -48,14 +48,13 @@ export class AuthService {
 
       // Return user data (omit password)
       const { password, ...userData } = user.toObject();
-      console.log('userData', user);
-      
-      const token = await this.generateJwtToken(createUserDto);
-      return token;
+      // Generate JWT token
+      const token = await this.generateJwtToken(userData);
+      return { ...userData, token };
     }
 
-    async generateJwtToken(user: userDto) {
-      const payload = { username: user.username, sub: user.id };
+    async generateJwtToken(user: any) {
+      const payload = { username: user.username, sub: user._id };
       return this.jwtService.sign(payload);
     }
 }
