@@ -1,11 +1,16 @@
 // src/auth/jwt.strategy.ts
-import { Injectable } from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { User } from 'src/schemas/users.schema';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
-  constructor() {
+  constructor(
+    @InjectModel(User.name) private userModel: Model<User>,
+  ) {
     if (!process.env.JWT_SECRET) {
       throw new Error('JWT_SECRET environment variable is not defined');
     }
@@ -17,6 +22,10 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   }
 
   async validate(payload: any) {
-    return { userId: payload.sub, username: payload.username };
+    const user = await this.userModel.findById(payload.sub);
+    if (!user) {
+      throw new UnauthorizedException('User not found');
+    }
+    return { userId: user._id, username: user.username, email: user.email };
   }
 }

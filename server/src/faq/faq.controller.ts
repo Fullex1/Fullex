@@ -15,6 +15,9 @@ export class FaqController {
   @Get()
   @ApiOperation({ summary: 'Get all FAQs' })
   @ApiResponse({ status: 200, description: 'List of FAQs', type: [FaqDto] })
+  @ApiResponse({ status: 401, description: 'Unauthorized'})
+  @ApiResponse({ status: 500, description: 'Internal Server Error'})
+  @ApiBearerAuth()
   async getAllFaqs(){
     return this.faqService.getAllFaqs();
   }
@@ -22,7 +25,10 @@ export class FaqController {
   @Post()
   @ApiOperation({ summary: 'Create a new FAQ' })
   @ApiResponse({ status: 201, description: 'FAQ created successfully', type: FaqDto })
+  @ApiResponse({ status: 401, description: 'Unauthorized'})
+  @ApiResponse({ status: 500, description: 'Internal Server Error'})
   @ApiBody({ type: FaqDto })
+  @ApiBearerAuth()
   async createFaq(@Body() faqDto: FaqDto, @Request() req){
     return this.faqService.createFaq(faqDto);
   }
@@ -30,6 +36,9 @@ export class FaqController {
   @Delete(':id')
   @ApiOperation({ summary: 'Delete an FAQ by ID' })
   @ApiResponse({ status: 200, description: 'FAQ deleted successfully' })
+  @ApiResponse({ status: 401, description: 'Unauthorized'})
+  @ApiResponse({ status: 500, description: 'Internal Server Error'})
+  @ApiBearerAuth()
   async deleteFaq(@Param('id') id: string) {
     return this.faqService.deleteFaq(id);
   }
