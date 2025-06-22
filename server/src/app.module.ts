@@ -6,20 +6,21 @@ import { PortfolioModule } from './portfolio/portfolio.module';
 import { RatesModule } from './rates/rates.module';
 import { PricingModule } from './pricing/pricing.module';
 import { AuthModule } from './auth/auth.module';
+import { CloudinaryModule } from './cloudinary/cloudinary.module';
 
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '.env',
+      envFilePath: `.env.${process.env.NODE_ENV}`,
     }),
     MongooseModule.forRoot(process.env.MONGODB_URI!),
     FaqModule, 
     PortfolioModule, 
     RatesModule, 
     PricingModule, 
-    AuthModule
+    AuthModule, CloudinaryModule
   ],
   controllers: [],
   providers: [],
