@@ -21,6 +21,6 @@ export class PricingService {
 
   async deletePricing(id: string) {
     const result = await this.pricingModel.deleteOne({ _id: id }).exec();
-    return "The question has deleted successfully";
+    return "Pricing entry deleted successfully";
   }
 }
