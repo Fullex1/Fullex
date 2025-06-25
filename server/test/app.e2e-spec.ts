@@ -1,25 +1,59 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { INestApplication } from '@nestjs/common';
-import * as request from 'supertest';
-import { App } from 'supertest/types';
+import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { AppModule } from './../src/app.module';
+import * as pactum from 'pactum';
 
 describe('AppController (e2e)', () => {
-  let app: INestApplication<App>;
+  let app: INestApplication;
+    let accessToken: string;
 
-  beforeEach(async () => {
+  const user = {
+    username: 'testuser',
+    email: 'testuser@example.com',
+    password: 'TestPassword@123',
+  };
+
+  beforeAll(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
       imports: [AppModule],
     }).compile();
 
+    jest.setTimeout(30000);
+
     app = moduleFixture.createNestApplication();
+    app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
     await app.init();
+    await app.listen(3001);
+    pactum.request.setBaseUrl('http://localhost:3001');
   });
 
-  it('/ (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
+  afterAll(async () => {
+    await app.close();
+  });
+
+  describe('Auth', () => {
+    it('should register a user', async () => {
+      await pactum
+        .spec()
+        .post('/auth/register')
+        .withBody(user)
+        .expectStatus(201)
+        .expectBodyContains(user.username)
+        .expectBodyContains(user.email)
+        .expectJsonLike({
+          username: user.username,
+          email: user.email,
+        })
+        .inspect()
+        .stores('userId', '_id');
+    });
+
+    it('should not register a duplicate user', async () => {
+      await pactum
+        .spec()
+        .post('/auth/register')
+        .withBody(user)
+        .expectStatus(400);
+    });
   });
 });

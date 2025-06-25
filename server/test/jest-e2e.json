@@ -7,6 +7,10 @@
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
   },
+  "globals": {
+    "NODE_ENV": "test",
+    "MONGODB_URI": "mongodb://admin:admin@localhost:27017/fullex-test?authSource=admin"
+  },
   "collectCoverageFrom": [
     "**/*.(t|j)s"
   ],

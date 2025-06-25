@@ -30,7 +30,10 @@ export class AuthService {
         email: createUserDto.email,
         password: hashedPassword,
       });
-      return createdUser.save();
+      const savedUser = await createdUser.save();
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { password, ...result } = savedUser.toObject();
+      return result;
     }
 
     async loginUser(createUserDto: userDto) {
