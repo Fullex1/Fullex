@@ -2,6 +2,7 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    margin-right: 0.5rem;
   }
   .nav-underline::after {
     content: "";
@@ -18,4 +19,16 @@
   .nav-underline:hover::after {
     transform: scaleX(1);
   }
+  
+.logoBox {
+  background:#03233AD9;
+  width: 150px;
+  height: 50px;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
   
