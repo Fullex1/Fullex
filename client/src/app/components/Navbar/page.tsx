@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Globe } from "lucide-react";
 import styles from "./navbar.module.css";
 
 export default function Navbar() {
@@ -21,20 +22,22 @@ export default function Navbar() {
       <div className="hidden lg:block bg-background shadow-md">
         <div className="flex items-center justify-between px-4">
       {/* Left Section */}
-          <div className="flex flex-row gap-x-6 items-center">
-        <Link href="/language" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Language</Link>
+          <div className="flex flex-row gap-x-6 items-center flex-1">
+        <Link href="/language" className={`${styles["language-icon"]} ${styles.pulse}`}>
+          <Globe />
+        </Link>
         <Link href="/home" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Home</Link>
         <Link href="/services" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Services</Link>
         <Link href="/why-fullex" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Why Fullex</Link>
       </div>
 
       {/* Center Logo */}
-          <div className={`flex justify-center items-center ${styles.logoBox}`}>
+          <div className={`flex justify-center items-center ${styles.logoBox} flex-shrink-0`}>
             <Image src="/logo.png" alt="Fullex Logo" width={150} height={50} priority />
       </div>
 
       {/* Right Section */}
-          <div className="flex flex-row gap-x-6 items-center">
+          <div className="flex flex-row gap-x-6 items-center flex-1 justify-end">
         <Link href="/portfolio" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Portfolio</Link>
         <Link href="/rates" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Rates</Link>
         <Link href="/plans" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Plans</Link>
