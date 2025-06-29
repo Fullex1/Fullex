@@ -113,6 +113,17 @@ html, body {
   overflow-x: hidden;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
   max-width: 100vw;
+  min-height: 100vh;
+}
+
+/* Make all images non-draggable */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
 }
 
