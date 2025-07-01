@@ -1,3 +1,7 @@
 .serviceCard{
     cursor: pointer;
 }
+.bigCard{
+    cursor: pointer;
+    /* width: 70%; */
+}

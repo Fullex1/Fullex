@@ -56,8 +56,8 @@ export default function Services() {
             image={service.image}
             title={service.name}
             description={service.description}
-            width={130}
-            height={130}
+            width={150}
+            height={150}
           />
           
         ))}
