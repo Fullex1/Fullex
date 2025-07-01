@@ -5,3 +5,13 @@
     cursor: pointer;
     /* width: 70%; */
 }
+@media (max-width: 400px) {
+  .cardMobileSmall .iconContainer {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .cardMobileSmall {
+    padding: 1.25rem !important; /* smaller padding */
+    border-radius: 1rem !important;
+  }
+}

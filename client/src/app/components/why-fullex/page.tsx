@@ -27,7 +27,7 @@ export default function WhyFullex() {
               Why Fullex?
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">Discover our complete range of services — and why Fullex stands out.</p>
-          <div className="flex justify-center text-center gap-8  mt-10 w-full">
+          <div className="flex flex-wrap justify-center text-center gap-8  mt-10 w-full">
               {whyFullex.map((item, index) => (
                   <div
                       key={item.id}

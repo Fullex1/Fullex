@@ -24,8 +24,8 @@
     transition: all 0.3s ease;
     z-index: 2;
     position: relative;
-    /* width: 100px !important;
-    height: 100px !important; */
+    width: 100% !important;
+    height: 100% !important;
   }
   
   .serviceCard:hover .serviceIcon {
@@ -116,3 +116,36 @@
       height: 70px !important;
     }
   }
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+}
+
+.iconContainer img{
+  height: 100% !important;
+  width: 100% !important;
+}
+
+@media (min-width: 640px) { /* sm */
+  .iconContainer {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (min-width: 768px) { /* md */
+  .iconContainer {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (min-width: 1024px) { /* lg */
+  .iconContainer {
+    width: 200px;
+    height: 200px;
+  }
+}
