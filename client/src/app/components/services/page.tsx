@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./services.module.css";
+import Card from "../card/page";
 
 type servicesType = {
   id : number;
@@ -48,43 +49,17 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full mx-auto">
         {services.map((service, index) => (
-          <div 
-            key={service.id} 
-            className={`${styles.serviceCard} group`}
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            <div className="relative bg-[#021327] rounded-2xl p-8 h-full border border-gray-700/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
-              {/* Icon section */}
-              <div className="flex justify-center mb-8">
-                <div className={`${styles.iconWrapper} relative`}>
-                  <Image 
-                    src={service.image} 
-                    alt={service.name} 
-                    width={80} 
-                    height={80}
-                    className={`${styles.serviceIcon} transition-all duration-300`}
-                  />
-                  <div className={`${styles.iconGlow} absolute inset-0 rounded-full`}></div>
-                </div>
-              </div>
-              
-              {/* Content */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300">
-                  {service.name}
-                </h3>
-                
-                <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
-                  {service.description}
-                </p>
-              </div>
-
-              {/* Bottom accent */}
-              <div className="mt-8 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </div>
-          </div>
+          <Card
+            key={service.id}
+            image={service.image}
+            title={service.name}
+            description={service.description}
+            width={130}
+            height={130}
+          />
+          
         ))}
       </div>
     </div>
