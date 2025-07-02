@@ -12,7 +12,7 @@ type CardProps = {
 export default function Card({ image, title, description, width = 180, height = 180 }: CardProps) {
   return (
     <div className={`${styles.serviceCard} group flex justify-center`}>
-      <div className="relative bg-[#021327] rounded-2xl p-8 h-full border border-gray-700/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col items-center w-full max-w-md mx-auto">
+      <div className="relative bg-[#021327] rounded-2xl p-8 h-[400px] border border-gray-700/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col items-center w-full max-w-md mx-auto">
         {/* Icon section */}
         <div className={`${styles.iconContainer} mb-5 relative flex items-center justify-center`} style={{ width, height }}>
           <Image
