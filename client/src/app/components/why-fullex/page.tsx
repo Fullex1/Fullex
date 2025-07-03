@@ -14,19 +14,19 @@ const whyFullex = [
     id: 2,
     image: "/whyfullex2.png",
     title: "Power Your Digital Presence",
-    description: "Your online identity matters. With Fullex, we give you a website that not only looks amazing but works harder for your business. Optimize, convert, and elevate your presence to the next level."
+    description: "Your online identity matters. Fullex gives you a site that looks amazing and performs better—helping you convert, grow, and elevate your digital presence."
   },
   {
     id: 3,
     image: "/whyfullex3.png",
     title: "Power Your Digital Presence",
-    description: "Your online identity matters. With Fullex, we give you a website that not only looks amazing but works harder for your business. Optimize, convert, and elevate your presence to the next level."
+    description: "Fullex builds more than websites — we build launchpads. With smart design, fast performance, and built-in SEO, your audience finds you and trusts you."
   },
   {
     id: 4,
     image: "/whyfullex2.png",
     title: "Scale With Confidence",
-    description: "Your growth doesn't stop at launch. With Fullex, we stay by your side — offering continuous support, performance tracking, and upgrades that keep your website sharp, secure, and scalable. Maintain momentum, adapt fast, and lead with confidence."
+    description: "We stay with you after launch — offering support, monitoring, and upgrades to keep your site secure, scalable, and aligned with your long-term goals."
   }
 ];
 
@@ -39,23 +39,19 @@ export default function WhyFullex() {
               Why Fullex?
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">Discover our complete range of services — and why Fullex stands out.</p>
-          <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center text-center gap-8 mt-10 w-full px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full mx-auto mt-10">
               {whyFullex.map((item, index) => (
-                  <div
-                      key={item.id}
-                      className={`${styles.serviceCard} group flex justify-center ${styles.cardMobileSmall}`}
-                      style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <Card
-                        image={item.image}
-                        title={item.title}
-                        description={item.description}
-                        width={180}
-                        height={180}
-                    />
-                  </div>
+                <Card
+                  key={item.id}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                  width={200}
+                  height={200}
+                />
+                
               ))}
-          </div>
+            </div>
          
         </div>
     </div>
