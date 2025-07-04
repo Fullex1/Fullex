@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./services.module.css";
 import Card from "../card/page";
+import AnimateIn from "@/app/AnimateIn";
 
 type servicesType = {
   id : number;
@@ -39,7 +40,7 @@ export default function Services() {
   ]
 
   return (
-    <div className="w-full flex justify-center items-center mt-20 mb-20 flex-col px-4">
+    <AnimateIn className="w-full flex justify-center items-center mt-20 mb-20 flex-col px-4">
       <div className="text-center mb-16">
         <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r ">
           What We Offer
@@ -62,6 +63,6 @@ export default function Services() {
           
         ))}
       </div>
-    </div>
+    </AnimateIn>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./why-fullex.module.css";
 import Card from "../card/page";
+import AnimateIn from "@/app/AnimateIn";
 
 const whyFullex = [
   {
@@ -33,7 +34,7 @@ const whyFullex = [
 export default function WhyFullex() {
 
   return (
-    <div className="w-full flex justify-center items-center flex-col">
+    <AnimateIn className="w-full flex justify-center items-center flex-col">
         <div className="flex justify-center text-center flex-col">
           <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r ">
               Why Fullex?
@@ -54,6 +55,6 @@ export default function WhyFullex() {
             </div>
          
         </div>
-    </div>
+    </AnimateIn>
   );
 }

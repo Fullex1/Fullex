@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Hero() {
     return (
-        <div className={styles.container + ""}>
+        <div className={styles.container + ""} >
             <div className={styles.hero + ""} >
                 <div className='flex justify-center items-center flex-col w-full h-full gap-4'>
                     <div className={`flex justify-center items-center`}>
