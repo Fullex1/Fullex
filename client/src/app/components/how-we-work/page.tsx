@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./howWeWork.module.css";
-import { Lightbulb, MousePointerClick } from "lucide-react";
+import { CodeXml, Lightbulb, MousePointerClick, Rocket } from "lucide-react";
 import AnimateIn from "@/app/AnimateIn";
 
 export default function HowWeWork() {
@@ -22,7 +22,7 @@ export default function HowWeWork() {
           How We Work
         </h2>
         <div className="w-full mt-5 flex flex-col gap-5">
-          <div className="flex gap-10 text-center">
+          <AnimateIn className="flex gap-10 text-center">
             <div className="bg-[#021327] p-3 rounded-md">
               <Lightbulb  size={70} />
             </div>
@@ -32,8 +32,8 @@ export default function HowWeWork() {
                 We start by understanding your vision and goals, brainstorming ideas to shape the project's direction.
               </p>
             </div>
-          </div>
-          <div className="flex gap-10 text-center">
+          </AnimateIn>
+          <AnimateIn className="flex gap-10 text-center">
             <div className="bg-[#021327] p-3 rounded-md">
               <MousePointerClick   size={70} />
             </div>
@@ -43,7 +43,29 @@ export default function HowWeWork() {
                 We create interactive prototypes to visualize the user experience and refine the design based on feedback.
               </p>
             </div>
-          </div>
+          </AnimateIn>
+          <AnimateIn className="flex gap-10 text-center">
+            <div className="bg-[#021327] p-3 rounded-md">
+              <CodeXml   size={70} />
+            </div>
+            <div className="flex flex-col text-start">
+              <h2 className="text-[35px]">Code</h2>
+              <p className="text-[#999]">
+              Our skilled developers bring the prototype to life, writing clean, efficient code to build the application.
+              </p>
+            </div>
+          </AnimateIn>
+          <AnimateIn className="flex gap-10 text-center">
+            <div className="bg-[#021327] p-3 rounded-md">
+              <Rocket   size={70} />
+            </div>
+            <div className="flex flex-col text-start">
+              <h2 className="text-[35px]">QA &amp; Polish</h2>
+              <p className="text-[#999]">
+              testing and quality assurance ensure a polished and bug-free product ready for launch.
+              </p>
+            </div>
+          </AnimateIn>
         </div>
       </div>
     </AnimateIn>
