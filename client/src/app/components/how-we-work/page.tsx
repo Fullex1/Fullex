@@ -9,9 +9,9 @@ export default function HowWeWork() {
 
   return (
     <AnimateIn className="w-full flex justify-center items-center mt-20 mb-20 flex-col ">
-      <div className="text-center mb-16">
-        <div className={`${styles.card} bg-[#021327] p-5 rounded-xl`}>
-          <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r ">
+      <div className="text-center mb-16 px-10">
+        <div className={`${styles.card} bg-[#021327] p-5 rounded-xl `}>
+          <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r">
             A Small Team. A Big Impact
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -23,9 +23,9 @@ export default function HowWeWork() {
         </h2>
         <div className="w-full mt-5 flex flex-col gap-5">
           <AnimateIn className="flex gap-10 text-center">
-            <div className="bg-[#021327] p-3 rounded-md">
-              <Lightbulb  size={70} />
-            </div>
+            <AnimateIn className="flex items-center justify-center h-20 w-20 mx-auto sm:h-auto sm:w-auto sm:mx-0 bg-[#021327] rounded-full p-4">
+              <Lightbulb size={70} />
+            </AnimateIn>
             <div className="flex flex-col text-start">
               <h2 className="text-[35px]">Brain Storm</h2>
               <p className="text-[#999] text-[18px]">
@@ -34,9 +34,9 @@ export default function HowWeWork() {
             </div>
           </AnimateIn>
           <AnimateIn className="flex gap-10 text-center">
-            <div className="bg-[#021327] p-3 rounded-md">
-              <MousePointerClick   size={70} />
-            </div>
+            <AnimateIn className="flex items-center justify-center h-20 w-20 mx-auto sm:h-auto sm:w-auto sm:mx-0 bg-[#021327] rounded-full p-4">
+              <MousePointerClick size={70} />
+            </AnimateIn>
             <div className="flex flex-col text-start">
               <h2 className="text-[35px]">Prototype</h2>
               <p className="text-[#999]">
@@ -45,9 +45,9 @@ export default function HowWeWork() {
             </div>
           </AnimateIn>
           <AnimateIn className="flex gap-10 text-center">
-            <div className="bg-[#021327] p-3 rounded-md">
-              <CodeXml   size={70} />
-            </div>
+            <AnimateIn className="flex items-center justify-center h-20 w-20 mx-auto sm:h-auto sm:w-auto sm:mx-0 bg-[#021327] rounded-full p-4">
+              <CodeXml size={70} />
+            </AnimateIn>
             <div className="flex flex-col text-start">
               <h2 className="text-[35px]">Code</h2>
               <p className="text-[#999]">
@@ -56,9 +56,9 @@ export default function HowWeWork() {
             </div>
           </AnimateIn>
           <AnimateIn className="flex gap-10 text-center">
-            <div className="bg-[#021327] p-3 rounded-md">
-              <Rocket   size={70} />
-            </div>
+            <AnimateIn className="flex items-center justify-center h-20 w-20 mx-auto sm:h-auto sm:w-auto sm:mx-0 bg-[#021327] rounded-full p-4">
+              <Rocket size={70} />
+            </AnimateIn>
             <div className="flex flex-col text-start">
               <h2 className="text-[35px]">QA &amp; Polish</h2>
               <p className="text-[#999]">

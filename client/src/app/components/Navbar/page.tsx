@@ -34,8 +34,8 @@ export default function Navbar() {
       </div>
 
       {/* Center Logo */}
-          <div className={`flex justify-center items-center ${styles.logoBox} flex-shrink-0`}>
-            <Image src="/logo.png" alt="Fullex Logo" width={150} height={50} priority />
+      <div className={`flex justify-center items-center ${styles.logoBox} flex-shrink-0`}>
+        <Image src="/logo.png" alt="Fullex Logo" width={250} height={75} priority />
       </div>
 
       {/* Right Section */}

@@ -4,6 +4,7 @@ import Hero from "./components/hero/page";
 import Services from "./components/services/page";
 import WhyFullex from "./components/why-fullex/page";
 import HowWeWork from "./components/how-we-work/page";
+import Portfoilo from "./components/portfolio/page";
 
 export default function Home() {
   
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <WhyFullex />
       <HowWeWork />
+      <Portfoilo />
     </div>
   );
 }

@@ -50,7 +50,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full mx-auto px-5">
         {services.map((service, index) => (
           <Card
             key={service.id}

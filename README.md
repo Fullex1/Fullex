@@ -194,7 +194,7 @@ Fullex/
 
 ## Authors
 
-- **Designer:** Mohamed Abdelhamid
+- **Designer:** Mohamed Abdelhamed
 - **Developer:** Omar Aboelnaga  
 - **For:** Fullex Company
 
