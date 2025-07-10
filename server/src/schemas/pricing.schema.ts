@@ -11,7 +11,13 @@ export class Pricing {
   price: number;
 
   @Prop()
+  goal: string;
+
+  @Prop({ type: [String] })
   features: string[];
+
+  @Prop({ type: [String] })
+  additions: string[];
 }
 
 export const PricingSchema = SchemaFactory.createForClass(Pricing);
