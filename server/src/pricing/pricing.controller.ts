@@ -6,13 +6,11 @@ import { Pricing } from '../schemas/pricing.schema';
 import { AuthGuard } from '@nestjs/passport';
 
 @ApiTags('pricing')
-@UseGuards(AuthGuard('jwt'))
 @Controller('pricing')
 export class PricingController {
     constructor(private readonly pricingService: PricingService) {}
 
     @Get()
-    @ApiBearerAuth()
     @ApiOperation({ summary: 'Get all pricing entries' })
     @ApiResponse({ status: 200, description: 'List of pricing entries', type: [PricingDto] })
     @ApiResponse({ status: 401, description: 'Unauthorized'})
@@ -28,6 +26,7 @@ export class PricingController {
     @ApiResponse({ status: 500, description: 'Internal Server Error'})
     @ApiBearerAuth()
     @ApiBody({ type: PricingDto })
+    @UseGuards(AuthGuard('jwt'))
     async createPricing(@Body() pricingDto: PricingDto) {
         return this.pricingService.createPricing(pricingDto);
     }
@@ -38,6 +37,7 @@ export class PricingController {
     @ApiResponse({ status: 200, description: 'Pricing entry deleted successfully' })
     @ApiResponse({ status: 401, description: 'Unauthorized'})
     @ApiResponse({ status: 500, description: 'Internal Server Error'})
+    @UseGuards(AuthGuard('jwt'))
     async deletePricing(@Param('id') id: string) {
         return this.pricingService.deletePricing(id);
     }

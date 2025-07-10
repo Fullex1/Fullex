@@ -7,8 +7,6 @@ import { AuthGuard } from '@nestjs/passport';
 
 @ApiTags('portfolio')
 @Controller('portfolio')
-@UseGuards(AuthGuard('jwt'))
-@ApiBearerAuth()
 export class PortfolioController {
   constructor(private readonly portfolioService: PortfolioService) {}
 
@@ -28,6 +26,8 @@ export class PortfolioController {
   @ApiResponse({ status: 401, description: 'Unauthorized'})
   @ApiResponse({ status: 500, description: 'Internal Server Error'})
   @UseInterceptors(FilesInterceptor('images'))
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async createPortfolio(
     @UploadedFiles() files: Express.Multer.File[],
     @Body() portfolioDto: PortfolioDto
@@ -44,6 +44,8 @@ export class PortfolioController {
   @ApiResponse({ status: 400, description: 'Bad Request' })
   @ApiResponse({ status: 401, description: 'Unauthorized'})
   @ApiResponse({ status: 500, description: 'Internal Server Error'})
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async deletePortfolioImage(
     @Param('portfolioId') portfolioId: string,
   ) {

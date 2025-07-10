@@ -6,8 +6,7 @@ import { Faq } from '../schemas/faq.schema';
 import { AuthGuard } from '@nestjs/passport';
 
 @ApiTags('faq')
-@UseGuards(AuthGuard('jwt'))
-@ApiBearerAuth()
+
 @Controller('faq')
 export class FaqController {
   constructor(private readonly faqService: FaqService) {}
@@ -27,6 +26,8 @@ export class FaqController {
   @ApiResponse({ status: 401, description: 'Unauthorized'})
   @ApiResponse({ status: 500, description: 'Internal Server Error'})
   @ApiBody({ type: FaqDto })
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async createFaq(@Body() faqDto: FaqDto, @Request() req){
     return this.faqService.createFaq(faqDto);
   }
@@ -36,6 +37,8 @@ export class FaqController {
   @ApiResponse({ status: 200, description: 'FAQ deleted successfully' })
   @ApiResponse({ status: 401, description: 'Unauthorized'})
   @ApiResponse({ status: 500, description: 'Internal Server Error'})
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async deleteFaq(@Param('id') id: string) {
     return this.faqService.deleteFaq(id);
   }

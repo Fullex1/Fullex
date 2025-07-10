@@ -6,8 +6,6 @@ import { Rate } from '../schemas/rates.schema';
 import { AuthGuard } from '@nestjs/passport';
 
 @ApiTags('rates')
-@UseGuards(AuthGuard('jwt'))
-@ApiBearerAuth()
 @Controller('rates')
 export class RatesController {
     constructor(private readonly ratesService: RatesService) {}
@@ -17,7 +15,6 @@ export class RatesController {
     @ApiResponse({ status: 200, description: 'List of rates', type: [RateDto] })
     @ApiResponse({ status: 401, description: 'Unauthorized'})
     @ApiResponse({ status: 500, description: 'Internal Server Error'})
-    @ApiBearerAuth()
     async getAllRates() {
         return this.ratesService.getAllRates();
     }
@@ -28,6 +25,7 @@ export class RatesController {
     @ApiResponse({ status: 401, description: 'Unauthorized'})
     @ApiResponse({ status: 500, description: 'Internal Server Error'})
     @ApiBody({ type: RateDto })
+    @UseGuards(AuthGuard('jwt'))
     @ApiBearerAuth()
     async createRate(@Body() rateDto: RateDto) {
         return this.ratesService.createRate(rateDto);
@@ -38,6 +36,7 @@ export class RatesController {
     @ApiResponse({ status: 200, description: 'Rate deleted successfully' })
     @ApiResponse({ status: 401, description: 'Unauthorized'})
     @ApiResponse({ status: 500, description: 'Internal Server Error'})
+    @UseGuards(AuthGuard('jwt'))
     @ApiBearerAuth()
     async deleteRate(@Param('id') id: string) {
         return this.ratesService.deleteRate(id);

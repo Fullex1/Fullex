@@ -1,0 +1,20 @@
+.cardContainer{
+    width: 100%;
+}
+.card{
+    width: 350px;
+}
+.cardImage {
+  width: 320px;
+  height: 180px;
+  position: relative;
+}
+@media (max-width: 350px) {
+    .card{
+        width: 300px;
+    }
+    .cardImage {
+        width: 280px;
+    }
+
+}
