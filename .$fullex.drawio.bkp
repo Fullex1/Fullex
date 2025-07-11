@@ -1,0 +1,322 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.12">
+  <diagram name="Page-1" id="Uw946gZTUGCRtJaxegiX">
+    <mxGraphModel dx="1443" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nWygoveOUm3oECDiXC1X-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;FullEx WebSite Plan&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="150" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Front End&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-9" value="Main Page" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Customer&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="310" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-13" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="380" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-14" value="Main Page" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="690" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Admin&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="310" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-17" target="nWygoveOUm3oECDiXC1X-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="450" />
+              <mxPoint x="840" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-17" value="Dashboard&lt;div&gt;Page&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="840" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-21" target="nWygoveOUm3oECDiXC1X-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-21" value="Main Page" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-24" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Content For FrontEnd&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-25" value="Hero Section" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-26" value="Some Of Our work" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="950" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-27" value="Why Choose Fullex" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="850" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-28" value="Services&lt;br&gt;That We&lt;div&gt;Offer&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-33" value="Rates Of Another Clients" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1150" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-34" value="How We Work On Projects" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-37" value="Pricing" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-38" value="FAQ" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-39" value="The Ways To COntact&lt;div&gt;(Fievr, gmail)&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-43" target="nWygoveOUm3oECDiXC1X-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-43" value="Dashboard" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="680" y="650" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-44" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Static&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1475" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-45" target="nWygoveOUm3oECDiXC1X-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-45" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dynamic&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1380" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="1290" />
+              <mxPoint x="590" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-46" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dynamic&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1275" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-47" target="nWygoveOUm3oECDiXC1X-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-47" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dynamic&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1170" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-48" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Static&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1075" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-49" target="nWygoveOUm3oECDiXC1X-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="985" />
+              <mxPoint x="590" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-49" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dynamic&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="970" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-50" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Static&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="880" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-51" target="nWygoveOUm3oECDiXC1X-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-51" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dynamic&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="780" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-52" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Static&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="670" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-61" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="860" y="650" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-62" value="" style="endArrow=none;html=1;rounded=0;entryX=0.3;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.314;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="925.94" y="855.8" as="sourcePoint" />
+            <mxPoint x="923" y="655.8800000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-63" value="Services" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-64" value="Portfolio" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="730" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-65" value="Rates" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-66" value="Pricing" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="770" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-69" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Dashboard&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="925" y="650" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-71" value="FAQ" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="790" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-72" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Dynamic&lt;/h1&gt;&lt;p&gt;Means That the shown data source will be from the DB to make the website be flexible&amp;nbsp;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="950" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-73" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Static&lt;/h1&gt;&lt;p&gt;Means that the showen data source will be hard coded&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1070" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-77" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Back End&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1600" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-78" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;The Technolgies that will be used for frontend is:&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Next.js(React) Or Angular, Tailwind Css&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="40" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-80" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;The Technolgies that will be used for Backend is:&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Nest.js, MongoDB and&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 20px;&quot;&gt;cloudinary(For Photos)&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-81" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Modules&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-83" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Portfolio Module&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1760" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-85" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Rates Module&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1760" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-86" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;FAQ Module&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1760" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-87" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Pricing Module&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1760" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-88" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Services Module&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="885" y="1760" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-89" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;GET Req: /api/portfolio&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1820" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-90" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;POST Req: /api/portfolio&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1860" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-91" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DELETE Req: /api/portfolio&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1910" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-92" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;GET Req: /api/Rates&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1820" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-93" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;POST Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Rates&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="1860" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-94" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DELETE Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Rates&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="1910" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-95" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;GET Req: /api/pricing&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1820" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-96" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;POST Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;pricing&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="505" y="1860" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-97" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DELETE Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;pricing&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="505" y="1910" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-98" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;GET Req: /api/faq&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1820" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-99" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;POST Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;faq&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="705" y="1860" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-100" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DELETE Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;faq&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="705" y="1910" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-101" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;GET Req: /api/services&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="895" y="1830" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-102" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;POST Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;services&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1870" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-103" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DELETE Req: /api/&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;services&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1920" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-104" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Models&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1990" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-105" target="nWygoveOUm3oECDiXC1X-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-105" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Portfolio&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2050" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-106">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="2130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-106" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Services&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2090" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-107" target="nWygoveOUm3oECDiXC1X-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-107" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Rates&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2130" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-108" target="nWygoveOUm3oECDiXC1X-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-108" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Pricing&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2170" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nWygoveOUm3oECDiXC1X-112" target="nWygoveOUm3oECDiXC1X-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-112" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;FAQ&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="2210" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nWygoveOUm3oECDiXC1X-113" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Module interactivity will adapt based on project requirements—flexible and scalable by design&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#9EFFB4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2070" width="390" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -27,7 +27,6 @@ export default function Portfoilo() {
       }
       const portfolioData = await data.json()
       setPortfolioData(portfolioData)
-      console.log(portfolioData);
 
     }
 
