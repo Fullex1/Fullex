@@ -23,7 +23,7 @@ const whyFullex = [
   },
   {
     id: 4,
-    image: "/whyfullex2.png",
+    image: "/whyfullex4.png",
     title: "Scale With Confidence",
     description: "We stay with you after launch — offering support, monitoring, and upgrades to keep your site secure, scalable, and aligned with your long-term goals."
   }

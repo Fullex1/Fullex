@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './hero.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
     return (
@@ -16,8 +17,8 @@ export default function Hero() {
                             <p className="text-[10px] sm:text-[20px]">achievements with warmth and confidence</p>
                         </div>                
                         <div className='flex justify-center items-center flex-row gap-10'>
-                            <button className='btn-gradient'>Let&apos;s Talk</button>
-                            <button className='btn-gradient'>Services</button>
+                            <Link href={"#contact"} className='btn-gradient'>Let&apos;s Talk</Link>
+                            <Link href={"#services"} className='btn-gradient'>Services</Link>
                         </div>
                     </div>   
                     

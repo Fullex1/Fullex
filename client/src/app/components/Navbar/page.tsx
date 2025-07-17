@@ -25,9 +25,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-4">
       {/* Left Section */}
           <div className="flex flex-row gap-x-6 items-center flex-1">
-        <Link href="#language" className={`${styles["language-icon"]} ${styles.pulse}`}>
-          <Globe />
-        </Link>
         <Link href="#home" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Home</Link>
         <Link href="#services" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Services</Link>
         <Link href="#why-fullex" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Why Fullex</Link>
@@ -43,7 +40,7 @@ export default function Navbar() {
         <Link href="#portfolio" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Portfolio</Link>
         <Link href="#rates" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Rates</Link>
         <Link href="#plans" className={`text-[1.15rem] font-medium ${styles["nav-underline"]}`}>Plans</Link>
-            <Link href="#contact" className="btn-outline px-4 py-2 rounded-lg font-semibold">Talk to us</Link>
+            <Link href="#contact" className="btn-outline px-4 py-2 rounded-lg font-semibold" style={{ display: "none" }}>Talk to us</Link>
           </div>
         </div>
       </div>
@@ -74,13 +71,6 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div className={`absolute top-full left-0 right-0 mx-4 transition-all duration-300 ease-in-out overflow-hidden z-50 ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
           <div className="bg-[#03233AD9] px-3 py-6 flex flex-col items-center justify-center min-h-[60vh] space-y-6 rounded-b-lg">
-            <Link 
-              href="#language" 
-              className={`text-[1.15rem] font-medium ${styles["nav-underline"]} text-center text-white`}
-              onClick={closeMenu}
-            >
-              Language
-            </Link>
             <Link 
               href="#home" 
               className={`text-[1.15rem] font-medium ${styles["nav-underline"]} text-center text-white`}
