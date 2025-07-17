@@ -37,4 +37,4 @@ export default function Card({ image, title, description, width = 180, height = 
       </div>
     </div>
   );
-}
+} 

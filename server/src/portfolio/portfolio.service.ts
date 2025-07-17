@@ -16,6 +16,10 @@ export class PortfolioService {
     return this.portfolioModel.find().exec();
   }
 
+  async getPortfolioById(id: string) {
+    return this.portfolioModel.findById(id).exec();
+  }
+
   async createPortfolio(portfolioDto: PortfolioDto, files: Express.Multer.File[]) {
     if (!files || files.length === 0) {
       throw new BadRequestException('At least one image file is required');

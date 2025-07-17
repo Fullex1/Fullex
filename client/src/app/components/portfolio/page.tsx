@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "./portfolio.module.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import AnimateIn from "@/app/AnimateIn";
+
 
 type Portfolio = {
   _id: string;
@@ -32,13 +34,13 @@ export default function Portfoilo() {
 
 
     return (
-        <div className="flex flex-col text-center justify-center">
+        <AnimateIn className="flex flex-col text-center justify-center">
             <div className="text-center mb-16">
                 <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r ">
                     Our Projects
                 </h2>
                 <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                    A glimpse into what we've built — creative, smart, and made to last
+                    A glimpse into what we&apos;ve built — creative, smart, and made to last
                 </p>
             </div>
 
@@ -50,7 +52,7 @@ export default function Portfoilo() {
                     (
                       <Link
                         key={portfolio._id}
-                        href={`/project/${portfolio._id}`}
+                        href={`/portfolio/${portfolio._id}`}
                         className={`${styles.card} cursor-pointer bg-[#021122] rounded-xl shadow-lg p-4 flex flex-col items-center transition-transform duration-500 ease-in-out transform hover:scale-105 animate-fade-in`}
                       >
                         <div className={`${styles.cardImage}`}>
@@ -71,6 +73,6 @@ export default function Portfoilo() {
                 <h1 className="text-bold mt-5">There is no available projects | Please refresh the page to get projects</h1> 
               }
             </div>
-        </div>
+        </AnimateIn>
     );
 }

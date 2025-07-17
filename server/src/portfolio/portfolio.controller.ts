@@ -19,6 +19,14 @@ export class PortfolioController {
     return this.portfolioService.getAllPortfolios();
   }
 
+  @Get(':id')
+  @ApiOperation({ summary: 'Get a single portfolio by id' })
+  @ApiResponse({ status: 200, description: 'Portfolio found' })
+  @ApiResponse({ status: 404, description: 'Portfolio not found' })
+  async getPortfolioById(@Param('id') id: string) {
+    return this.portfolioService.getPortfolioById(id);
+  }
+
   @Post()
   @ApiOperation({ summary: 'Create a new portfolio with multiple images' })
   @ApiConsumes('multipart/form-data')

@@ -1,9 +1,7 @@
 'use client'
-import Image from "next/image";
-import styles from "./rates.module.css";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Rating } from '@smastrom/react-rating'
+import AnimateIn from "@/app/AnimateIn";
 
 
 type Rates = {
@@ -34,7 +32,7 @@ export default function Rates() {
 
 
     return (
-        <div className="flex flex-col text-center justify-center mt-10">
+        <AnimateIn className="flex flex-col text-center justify-center mt-10">
             <div className="text-center mb-16">
                 <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r ">
                     What Our Clients Say
@@ -61,6 +59,6 @@ export default function Rates() {
                     <div className="text-gray-400">No reviews yet.</div>
                 )}
             </div>
-        </div>
+        </AnimateIn>
     );
 }

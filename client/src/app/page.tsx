@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar/page";
 import Hero from "./components/hero/page";
 import Services from "./components/services/page";

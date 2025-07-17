@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import styles from "./services.module.css";
-import Card from "../card/page";
+import Card from "../card/Card";
 import AnimateIn from "@/app/AnimateIn";
 
 type servicesType = {
@@ -51,7 +49,7 @@ export default function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full mx-auto px-5">
-        {services.map((service, index) => (
+        {services.map((service) => (
           <Card
             key={service.id}
             image={service.image}

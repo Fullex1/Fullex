@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./howWeWork.module.css";
 import { CodeXml, Lightbulb, MousePointerClick, Rocket } from "lucide-react";
 import AnimateIn from "@/app/AnimateIn";
@@ -15,7 +14,7 @@ export default function HowWeWork() {
             A Small Team. A Big Impact
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            At Fullex, we believe a website is more than just code or design — it's your identity. We treat every project like our own — no templates, no shortcuts, no copy-paste.
+            At Fullex, we believe a website is more than just code or design — it&apos;s your identity. We treat every project like our own — no templates, no shortcuts, no copy-paste.
           </p>
         </div>
         <h2 className="text-[40px] font-bold mt-8">
@@ -29,7 +28,7 @@ export default function HowWeWork() {
             <div className="flex flex-col text-start">
               <h2 className="text-[35px]">Brain Storm</h2>
               <p className="text-[#999] text-[18px]">
-                We start by understanding your vision and goals, brainstorming ideas to shape the project's direction.
+                We start by understanding your vision and goals, brainstorming ideas to shape the project&apos;s direction.
               </p>
             </div>
           </AnimateIn>

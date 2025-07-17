@@ -1,10 +1,7 @@
 'use client'
-import Image from "next/image";
-import styles from "./faq.module.css";
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { Rating } from '@smastrom/react-rating'
 import { ChevronDown, ChevronUp } from "lucide-react";
+import AnimateIn from "@/app/AnimateIn";
 
 type Faq = {
   _id: string;
@@ -38,7 +35,7 @@ export default function FaqPage() {
 
 
     return (
-        <div className="flex flex-col text-center justify-center mt-10">
+        <AnimateIn className="flex flex-col text-center justify-center mt-10">
             <div className="text-center mb-16">
                 <h2 className="text-[40px] font-bold mb-4 bg-gradient-to-r ">
                     FAQ
@@ -74,6 +71,6 @@ export default function FaqPage() {
                 </div>
             ))}
             </div>
-        </div>
+        </AnimateIn>
     );
 }

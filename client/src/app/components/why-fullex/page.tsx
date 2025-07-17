@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import styles from "./why-fullex.module.css";
-import Card from "../card/page";
+import Card from "../card/Card";
 import AnimateIn from "@/app/AnimateIn";
 
 const whyFullex = [
@@ -41,7 +39,7 @@ export default function WhyFullex() {
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">Discover our complete range of services — and why Fullex stands out.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full mx-auto mt-10 px-2 sm:px-4 md:px-0">
-              {whyFullex.map((item, index) => (
+              {whyFullex.map((item) => (
                 <Card
                   key={item.id}
                   image={item.image}

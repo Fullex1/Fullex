@@ -16,7 +16,7 @@ export default function Hero() {
                             <p className="text-[10px] sm:text-[20px]">achievements with warmth and confidence</p>
                         </div>                
                         <div className='flex justify-center items-center flex-row gap-10'>
-                            <button className='btn-gradient'>Let's Talk</button>
+                            <button className='btn-gradient'>Let&apos;s Talk</button>
                             <button className='btn-gradient'>Services</button>
                         </div>
                     </div>   
