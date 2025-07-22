@@ -36,8 +36,8 @@ The project supports Docker for easy deployment and local development. This allo
     - Start any required dependencies (e.g., MongoDB if defined in `docker-compose.yml`)
 
 3. **Access the services:**
-    - Frontend: [http://localhost:3000](http://localhost:3000)
-    - Backend: [http://localhost:5000](http://localhost:5000) (or as configured)
+    - Frontend: [http://localhost:3000](http://localhost:3001)
+    - Backend: [http://localhost:5000](http://localhost:3000) 
 
 4. **Stopping the services:**
     ```bash
