@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Globe } from "lucide-react";
 import styles from "./navbar.module.css";
 
 export default function Navbar() {

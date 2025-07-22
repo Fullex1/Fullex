@@ -1,10 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../portfolio.module.css";
 import AnimateIn from "@/app/AnimateIn";
 
+interface Portfolio {
+  _id: string;
+  title: string;
+  description: string;
+  images: string[];
+}
+
 // Client component for animation and interactivity
-function ProjectDetailsClient({ project }: { project: any }) {
+function ProjectDetailsClient({ project }: { project: Portfolio | null }) {
   if (!project) {
     return <div className="text-center mt-10">Project not found.</div>;
   }
@@ -42,16 +48,24 @@ function ProjectDetailsClient({ project }: { project: any }) {
   );
 }
 
+
 // Server component for data fetching
-export default async function ProjectDetailsPage({ params }: { params: { id: string } }) {
-  let project = null;
+export default async function ProjectDetailsPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  let project: Portfolio | null = null;
   try {
-    const res = await fetch(`http://localhost:3000/portfolio/${params.id}`, { cache: 'no-store' });
+    const { id } = await params;
+    const res = await fetch(`http://localhost:3000/portfolio/${id}`, {
+      cache: "no-store",
+    });
     if (res.ok) {
       project = await res.json();
     }
-  } catch (e) {
-    // ignore
+  } catch (error) {
+    console.error("Failed to fetch project:", error);
   }
   return <ProjectDetailsClient project={project} />;
-} 
+}
